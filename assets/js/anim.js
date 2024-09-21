@@ -3,6 +3,48 @@ var audio = document.querySelector("audio");
 var lyrics = document.querySelector("#lyrics");
 
 // Array de objetos que contiene cada línea y su tiempo de aparición en segundos
+var lyricsData_ = [
+  { text: "Él la estaba esperando con una flor amarilla", time: 16 },
+  { text: "Ella lo estaba soñando con la luz en su pupila", time: 24 },
+  { text: "Y el amarillo del sol iluminaba la esquina", time: 31 },
+  { text: "Lo sentía tan cercano, lo sentía desde niña", time: 39 },
+  { text: "Ella sabía que él sabía", time: 46 },
+  { text: "Que algún día pasaría, que vendría a buscarla", time: 47 },
+  { text: "Con sus flores amarillas", time: 50 },
+  { text: "No te apures, no detengas el instante del encuentro", time: 59 },
+  {
+    text: "Está dicho que es un hecho, no la pierdas, no hay derecho",
+    time: 62,
+  },
+  { text: "No te olvides que la vida casi nunca está dormida", time: 66 },
+  { text: "En ese bar tan desierto nos esperaba el encuentro", time: 94 },
+  { text: "Ella llegó en limusina amarilla por supuesto", time: 102 },
+  { text: "Él se acercó de repente la miro tan de frente", time: 110 },
+  { text: "Toda una vida soñada y no pudo decir nada", time: 118 },
+  { text: "Ella sabía que él sabía", time: 124 },
+  { text: "Que algún día pasaría que vendría a buscarla", time: 127 },
+  { text: "Con sus flores amarillas", time: 131 },
+  { text: "No te apures, no detengas el instante del encuentro", time: 138 },
+  {
+    text: "Está dicho que es un hecho, no la pierdas, no hay derecho",
+    time: 141,
+  },
+  { text: "No te olvides que la vida casi nunca está dormida", time: 145 },
+  { text: "Flores amarillas", time: 161 },
+  { text: "Ella sabía que él sabía", time: 170 },
+  { text: "Que algún día pasaría que vendría a buscarla", time: 173 },
+  { text: "Con sus flores amarillas", time: 176 },
+  { text: "No te apures, no detengas el instante del encuentro", time: 182 },
+  {
+    text: "Está dicho que es un hecho, no la pierdas, no hay derecho",
+    time: 186,
+  },
+  { text: "No te olvides que la vida casi nunca está dormida", time: 190 },
+  { text: "Ella sabía que él sabía", time: 199 },
+  { text: "Él sabía, ella sabía, que él sabía, ella sabía", time: 202 },
+  { text: "Y se olvidaron de sus flores amarillas", time: 206 },
+];
+
 var lyricsData = [
   { text: "At the time", time: 15 },
   { text: "The whisper of birds", time: 18 },
@@ -55,7 +97,7 @@ function updateLyrics() {
   }
 }
 
-setInterval(updateLyrics, 1000);
+// setInterval(updateLyrics, 1000);
 
 //funcion titulo
 // Función para ocultar el título después de 216 segundos
